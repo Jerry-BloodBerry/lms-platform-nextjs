@@ -17,7 +17,6 @@ import {
 import toast from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
 import { cn } from '@/lib/utils'
-import { Textarea } from '@/components/ui/textarea'
 import { Course } from '@prisma/client'
 import { Combobox } from '@/components/ui/combobox'
 
