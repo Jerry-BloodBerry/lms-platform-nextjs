@@ -59,7 +59,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div>
-      <div className="flex items-center py-4 justify-between">
+      <div className="flex items-center py-4 gap-x-2 justify-between">
         <Input
           placeholder="Filter courses..."
           value={(table.getColumn('title')?.getFilterValue() as string) ?? ''}
@@ -69,7 +69,7 @@ export function DataTable<TData, TValue>({
           className="max-w-sm"
         />
         <Link href="/teacher/create">
-          <Button>
+          <Button className="whitespace-nowrap">
             <PlusCircle className="h-4 w-4 mr-2" />
             New course
           </Button>
